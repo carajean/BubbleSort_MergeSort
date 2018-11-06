@@ -24,7 +24,7 @@ describe('Bubble Sort', function(){
     // });
 
     for (let i = 2; i < 103; i += 20) {
-        it('sorts an array of ' + i + 'random items', function(){
+        it('sorts an array of ' + i + ' random items', function(){
             let arr = generageArray(i, 0, 100);
             let sorted = arr.slice(0).sort((a, b) => a - b);
             expect(bubbleSort(arr)).toEqual(sorted);
@@ -46,7 +46,7 @@ describe('Bubble Sort', function(){
     // function spyOn (obj, method) {
     //     let counter = 0;
     //     let spy = function() {
-    //         count++;
+    //         counter++;
     //     }
     //     obj[method] = spy;
     //     spy.calls = {

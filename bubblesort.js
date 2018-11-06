@@ -32,4 +32,4 @@ function swap (arr, index) { // side effects
     arr[index + 1] = oldLeft;
 }
 
-console.log(bubbleSort([3, 5, 1]));
+console.log(bubbleSort([4, 6, 5, 1]));
