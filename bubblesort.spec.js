@@ -26,20 +26,20 @@ describe('Bubble Sort', function(){
     for (let i = 2; i < 103; i += 20) {
         it('sorts an array of ' + i + 'random items', function(){
             let arr = generageArray(i, 0, 100);
-            let sorted = arr.slice(0).sort((a,b) => a - b);
+            let sorted = arr.slice(0).sort((a, b) => a - b);
             expect(bubbleSort(arr)).toEqual(sorted);
         });
     }
 
     it('compares the expected number of times', function(){
         spyOn(window, 'inOrder').and.callThrough();
-        bubbleSort([4,6,5,1]);
+        bubbleSort([4, 6, 5, 1]);
         expect(inOrder.calls.count()).toEqual(10);
     });
 
     it('swaps the expected number of times', function(){
         spyOn(window, 'swap').and.callThrough();
-        bubbleSort([4,6,5,1]);
+        bubbleSort([4, 6, 5, 1]);
         expect(swap.calls.count()).toEqual(4);
     });
 

@@ -26,7 +26,7 @@ function inOrder(arr, index) { // pure function
     return arr[index] < arr[index + 1];
 }
 
-function swap (arr, index) { // side effects 
+function swap (arr, index) { // side effects
     let oldLeft = arr[index];
     arr[index] = arr[index + 1];
     arr[index + 1] = oldLeft;
